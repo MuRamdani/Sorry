@@ -1,0 +1,107 @@
+<html>
+
+<head>
+
+    <title> Maafin aku ya! </title>
+
+    <script type="text/javascript">
+        flag = 1
+
+        function f1()
+
+        {
+
+            alert("Makasih ya udah maafin aku!")
+
+        }
+
+        function f()
+
+        {
+
+            if (flag == 1)
+
+            {
+
+                Bn.style.top = 400
+
+                Bn.style.left = 300
+
+                flag = 2
+
+            } else if (flag == 2)
+
+            {
+
+                Bn.style.top = 400
+
+                Bn.style.left = 50
+
+                flag = 3
+
+            } else if (flag == 3)
+
+            {
+
+                Bn.style.top = 370
+
+                Bn.style.left = 166
+
+                flag = 1
+
+            }
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <style>
+        #beneranblur {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .3);
+            -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+            transition: all 3s ease;
+        }
+        
+        #bgbelakang img {
+            opacity: .8;
+            width: 100%;
+            height: 100%
+        }
+    </style>
+
+
+
+    <div id="bgbelakang">
+        <!-- Wallpaper --><img src="p.png" id="wallpaper" />
+        <div id="beneranblur"></div>
+    </div>
+    <div id="By" style="position:absolute; left:6px; top:3px; width:210px;height:210px;">
+
+        <h1 style="width: 510px"> MAAFIN AKU YA!</h1>
+        <h1 style="width: 500px">Halo, aku minta maaf udah bikin Hani Marah 👉🏻👈🏻</h1>
+    </div>
+
+    <div id="By" style="position:absolute; left:64px; top:370px; width:210px;height:210px;">
+
+        <input type="button" value=" YA " onClick="f1()" />
+
+    </div>
+
+    <div ID="Bn" style="position:absolute; left:166px; top:370px; width:210px; height:210px;">
+
+        <input type="button" value=" TIDAK " onMouseOver="f()" />
+
+    </div>
+
+</body>
+
+</html>
